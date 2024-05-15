@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antarctican Museum - 所有馆藏</title>
+    <link rel="stylesheet" href="./AntarcticanMuseum.css">
+</head>
+<body>
+    <script src="./AntarcticanMuseum.js"></script>
+    <div class="shadow" id="shadow" onclick="menu_push_back(this), remove_shadow (this)"></div>
+    <nav>
+        <div class="navigator" style="position: relative; padding: 3vw;">
+            <ul>
+                <li class="logo_home"><a href="./index.html"><img src="./assets/logo.png" alt="" style="width: 6.5vw;"></a></li>
+                <ul class="subnavi">
+                    <li><button class="menu_button" style="display: none;">
+                        <img src="./assets/search_white_20dp_FILL0_wght400_GRAD-25_opsz20.png" alt="" class="search" style="width: 2vw;"></button>
+                    </li>
+                    <li><button class="menu_button" onclick="menu_push(this), draw_shadow(this)">
+                        <img src="./assets/menu_white_20dp_FILL0_wght400_GRAD-25_opsz20.png" alt="" class="menu" style="width: 2vw;"></button>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+    <section style="display: none;">
+        <div class="emptybox" style="min-height: 8vw;"></div>
+    </section>
+    <div class="menu_nav" id="menu">
+        <div style="margin: 6% 10% 6% 6%">
+            <button class="menu_button" onclick="menu_push_back(this), remove_shadow (this)" style="float: right;">
+                <img src="./assets/close_white_20dp_FILL0_wght400_GRAD-25_opsz20.png" alt="" class="cancel" style="width: 2vw;">
+            </button>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumOnView.html"><div class="menu_banner">正在展出</div></a></div>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumCollection.html"><div class="menu_banner">所有馆藏</div></a></div>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumNews.html"><div class="menu_banner">新闻</div></a></div>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumAbout.html"><div class="menu_banner">关于</div></a></div>
+            <div style="position: absolute; right: 10%; bottom: 6%; left: 8%;">
+                <hr style="margin-bottom: 5vw;">
+                <img src="./assets/pear_logo.png" alt="" style="width: 3vw;"></li>
+                <span style="display: inline; font-family: 'HelveticaNow XBold'; color: white;">A Pear Organization</span>
+            </div>
+        </div>
+    </div>
+    <div id="collection">
+        <div class="news_title" style="font-family: 'SourceHans Heavy'; color: white; width: 90%; text-align: left; margin: 0 auto;">所有馆藏</div>
+        <div style="font-family: 'SourceHans Medium'; color: white; width: 90%; text-align: left; margin: 0 auto; font-size: 1vw;">*如需撤退，请联系企鹅，我们将尽快处理。撤退不代表去除馆藏。</div>
+        <div class='selector' style="margin-top: 2vw; display: flex; justify-content: center; align-items: center;">
+            <a href="#ASH"><div class="options"><img src="./assets/icons/ASH.JPEG" alt=""><span style="margin-left: 1vw; margin-right: 1vw;">爱死哼</span></div></a>
+            <a href="#ZJQ"><div class="options"><img src="./assets/icons/ZJQ.JPEG" alt=""><span style="margin-left: 1vw; margin-right: 1vw;">指甲钳</span></div></a>
+            <a href="#SBB"><div class="options"><img src="./assets/icons/SBB.JPEG" alt=""><span style="margin-left: 1vw; margin-right: 1vw;">圣粑粑</span></div></a>
+            <a href="#XY"><div class="options"><img src="./assets/icons/XY.JPEG" alt=""><span style="margin-left: 1vw; margin-right: 1vw;">星宇</span></div></a>
+            <a href="#CJY"><div class="options"><img src="./assets/icons/CJY.JPEG" alt=""><span style="margin-left: 1vw; margin-right: 1vw;">松果</span></div></a>
+            <a href="#FYB"><div class="options"><img src="./assets/icons/FYB.JPEG" alt=""><span style="margin-left: 1vw; margin-right: 1vw;">翻鱼饼</span></div></a>
+            <a href="#ELSE"><div class="options"><img src="./assets/icons/account_white_circle_20dp_FILL0_wght400_GRAD-25_opsz20.png" alt=""><span style="margin-left: 1vw; margin-right: 1vw;">其他</span></div></a>
+        </div>
+        <section>
+            <div id="ASH">
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Brow_Knit_V.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《这是在干什么》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Fit_of_Laughter_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《大笑I》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Kiss_Kiss.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《亲亲》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Not_Listening.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《行行行》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/PIcture_Taken_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《统统记录》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Pointing_III.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《你你你》（原为GIF）</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Slumber_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《无聊，姐先睡了》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Slumber_II.jpg" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《zzz》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Slumber_III.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《zzzz》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Stabbing.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《灰烬戳死楼上》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Stealth_of_Laughter.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《偷笑》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Stunned.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《呆滞》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Who_Asked.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《谁问你了》</p>
+                    </div>
+                    <div class="article"></div>
+                    <div class="article" style="margin-left: 5vw;"></div>
+                </div>
+            </div>
+            <div id="ZJQ">
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Astonished.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《你在说你妈呢》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Best_Wishes.JPEG" alt="">
+                        <p style="font-size: 1vw;">？年</p>
+                        <p style="font-size: 1.5vw;">《祝福》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Brow_Knit.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《皱眉I》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Cross_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">？年</p>
+                        <p style="font-size: 1.5vw;">《合十》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Despite_IV.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《不屑一顾呵呵》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Drunken_Slumber.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《姐醉了》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Enjoying.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《爽死姐了》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/F_You.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《我草泥马》（原为GIF）</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Feet.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《玉足》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/FIt_of_Laughter_III.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《尼玛把姐蠢笑了》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Fit_of_Laughter_IV.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《我他妈，笑楼（1）》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Fit_of_Laughter_V.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《我他妈，笑楼（2）》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Fit_of_Laughter_VI.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《大笑中》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Flying.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《姐起飞了》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/High.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《吸了两斤》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/It's_Me.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《It's Me》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Kiss_Kiss_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《亲亲》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Monster.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《无题》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/No_Title_III.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《无题》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/OK.JPEG" alt="">
+                        <p style="font-size: 1vw;">？年</p>
+                        <p style="font-size: 1.5vw;">《OK》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Pointing_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">？年</p>
+                        <p style="font-size: 1.5vw;">《Out》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Screaming_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《尖叫（1）》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Screaming_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《尖叫（2）》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Screaming_III.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《尖叫（3）》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Singing.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《歌唱》（原为视频）</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Singing_III.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《歌唱》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Smiling.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《微笑》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Speechless_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">？年</p>
+                        <p style="font-size: 1.5vw;">《姐服了你》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Speechless_IV.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《无语了集美》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Staring.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《盯》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Stealth_of_Laughter_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《憋笑好痛苦》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Threatening_IV.JPEG" alt="">
+                        <p style="font-size: 1vw;">？年</p>
+                        <p style="font-size: 1.5vw;">《姐毙了你》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Unexpected_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《惊吓》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Victory_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《耶》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Victory_III.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《耶》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/What's_Up.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《咋了集美们》</p></div>
+                </div>
+            </div>
+            <div id="SBB">
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Answer_Me.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《Answer Me》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Awaken.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《发生甚么事了》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/BItch.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《件货，我呸》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Brow_Knit_VI.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《这是在干什么》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Crying.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《哭泣》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Dark_Queen.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《外星女王》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Despite_III.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《装什么呀，妹妹》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Fit_of_Laughter_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《笑死你爹我了》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Hidden.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《上班吧躲藏》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Invitation.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《妹妹，上车吗》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Laughing_to_Death_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《笑死激酶了》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Sao_Bi_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《怎么是你这个扫卟》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Scared.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《吓到老太了》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Slumber_IV.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《睡眠》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Slumber_V.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《吵死了大姐！》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Strong.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《强壮》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Sword_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《击剑（1）》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Sword_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《击剑（2）》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/What.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《啥意思，嗯？》（原为GIF）</p>
+                    </div>
+                    <div class="article"></div>
+                    <div class="article" style="margin-left: 5vw;"></div>
+                </div>
+            </div>
+            <div id="XY">
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Arguing.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《争论》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Bored_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《姐无聊死了》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Bored_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《无聊》（原为GIF）</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Buried.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《劳累》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Can_You_Eat.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《你能不能吃啊？》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Despite_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《扑面而来的通讯录味》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Despite_V.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《通讯录真是没眼看》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Expectation.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《今晚吃啥？》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Fit_of_Laughter_IX.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《忍俊不禁（1）》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Fit_of_Laughter_X.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《忍俊不禁（2）》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Fit_of_Laughter_XI.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《忍俊不禁（3）》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Fit_of_Laughter_VII.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《大笑（1）》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/FIt_of_Laughter_VIII.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《大笑（2）》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Hit.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《撞到桌角》（原为GIF）</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Ironsmith.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《铁匠》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Multiple.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《分身星宇》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Nian_Yu.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《放下你的身段，美眉》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/No_Title_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《无题》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Serene.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《姐来看看是什么东西》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Sophisticated.JPG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《姐有故事，你有酒吗》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Speechless_III.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《无语》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Threatening_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《小样，姐neng死你》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Threatening_V.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《呸呸呸，晦气东西》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Victory_IV.JPEG" alt="">
+                        <p style="font-size: 1vw;">？年</p>
+                        <p style="font-size: 1.5vw;">《无题》</p></div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Yan_Ni.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《无题》</p>
+                    </div>
+                    <div class="article"></div>
+                    <div class="article" style="margin-left: 5vw;"></div>
+                </div>
+            </div>
+            <div id="CJY">
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Ascended.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《升仙了》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Bored_III.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《无聊》（原为GIF）</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Bored_IV.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《来啊，哥哥》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Cat_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《无语》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Cockroach.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《蟑螂进化》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Cross_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">复刻《合十》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Despite.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《鄙视》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Drunk.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《喝醉》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Eye_Rolling_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">复刻《白眼》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Laughing_to_Death.JPG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《笑死爹爹了》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/No_Title_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《无题》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/PIcture_Taken_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">复刻《统统记录》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Preventing.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《阻止》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Sao_Bi.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《扫卟》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Singing_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">复刻《唱歌》（原为视频）</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Smirk.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《邪魅一笑》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Speechless_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《哥服了你》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Speechless_V.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《Queen无语》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Thinking.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《思考》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Threatening_III.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《哥毙了你》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Threatening_VI.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《我杀了你》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Tired.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《劳累》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Undressing_I.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《头牌安通》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Unexpected_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">复刻《惊吓》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Victory_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">复刻《（指甲钳）耶》</p>
+                    </div>
+                    <div class="article"></div>
+                    <div class="article" style="margin-left: 5vw;"></div>
+                </div>
+            </div>
+            <div id="FYB">
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Threatening_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2024年</p>
+                        <p style="font-size: 1.5vw;">《姐揍你信不信》</p>
+                    </div>
+                    <div class="article"></div>
+                    <div class="article" style="margin-left: 5vw;"></div>
+                </div>
+            </div>
+            <div id="ELSE">
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Brow_Knit_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《你想干嘛？》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Brow_Knit_III.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《So What?》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/Brow_Knit_IV.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《So What?》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Hidden_II.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《压迫感》（原为GIF）</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Libbie_Astonished.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《被通讯录吓晕》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/LIbbie_Smling.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《和蔼》</p>
+                    </div>
+                </div>
+                <div class="news_section" style="width: 70%;">
+                    <div class="article" style="margin-right: 5vw;">
+                        <img src="./assets/Collection/Slumber_VI.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《先睡一步》</p>
+                    </div>
+                    <div class="article">
+                        <img src="./assets/Collection/Libbie_Astonished.JPEG" alt="">
+                        <p style="font-size: 1vw;">2023年</p>
+                        <p style="font-size: 1.5vw;">《被通讯录吓晕》</p>
+                    </div>
+                    <div class="article" style="margin-left: 5vw;">
+                        <img src="./assets/Collection/LIbbie_Smling.JPEG" alt="">
+                        <p style="font-size: 1vw;">2022年</p>
+                        <p style="font-size: 1.5vw;">《和蔼》</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section>
+        <div class="bottom">
+            <ul>
+                <ul>
+                    <li><img src="./assets/pear_logo.png" alt="" style="width: 3vw;"></li>
+                    <li style="display: inline;">A Pear Organization</li>
+                </ul>
+                <li style="display: inline; align-content: center;">© 2024 Antarctican Museum. All Rights Reserved.</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

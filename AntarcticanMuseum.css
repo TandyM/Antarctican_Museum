@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'HelveticaNow XBold';
+    src: url(./fonts/HelveticaNowDisplayXBd.OTF) format('opentype');
+    font-weight: 'XBold';
+}
+@font-face {
+    font-family: 'SourceHans Heavy';
+    src: url(./fonts/SourceHanSansCN-Heavy.otf) format('opentype') ;
+    font-weight: 'Heavy';
+}
+@font-face {
+    font-family: 'SourceHans Medium';
+    src: url(./fonts/SourceHanSansCN-Medium.otf) format('opentype');
+    font-weight: 'Medium';
+}
+html {
+    background-color: rgb(21, 21, 21);
+    margin: 0;
+    font-size: 22px;
+    scroll-padding-top: 10vw;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+.content {
+    flex-shrink: 0;
+}
+.shadow {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(21, 21, 21);
+    transition-duration: 0.2s;
+    visibility: hidden;
+    opacity: 0;
+}
+.navigator {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3vw 5vw 3vw 5vw;
+    position: fixed;
+    z-index: 2;
+    background-image: linear-gradient(rgb(21, 21, 21, 1), rgb(21, 21, 21, 0));
+}
+.navigator ul, .bottom ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+.logo_home {
+    order: -1;
+}
+.navigator ul li, .bottom ul li {
+    display: inline-block;
+}
+.menu_button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    border-radius: 2vw;
+    padding: 0.3vw 1.3vw;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.menu_button:hover {
+    background-color: rgb(0, 67, 109);
+}
+.subnavi li {
+    margin: 0 0 0 1vw;
+}
+.menu_nav {
+    position: fixed;
+    z-index: 4;
+    top: 0;
+    right: -50%;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(30, 30, 30);
+    transition: right 0.2s ease;
+}
+.menu_banner {
+    font-family: 'SourceHans Heavy';
+    font-size: 4vw;
+    color: white;
+    margin: 0 0 1vw 1vw;
+    width: 100%;
+    border-radius: 0 0 3.5vw 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.menu_banner:hover {
+    background-color: rgb(0, 67, 109);
+    background-image: url(./assets/banner_background.png);
+    background-size: cover;
+}
+.banner {
+    font-family: 'SourceHans Heavy';
+    font-weight: 'Heavy';
+    font-size: 2vw;
+}
+.banner_heading {
+    background-color: rgb(0, 67, 109);
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    height: 9vw;
+    align-content: center;
+    background-image: url(./assets/banner_background.png);
+    background-size: cover;
+    border-radius: 0 0 0 4.5vw;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.banner_heading:hover {
+    background-color: rgb(0, 100, 162);
+    border-radius: 4.5vw;
+}
+.News {
+    color: #ffffff;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+.news_title_right {
+    background-color: rgb(14, 64, 0);
+    color: white;
+    width: 25vw;
+    height: 7vw;
+    border-radius: 0 0 0 5vw;
+    background-image: url(./assets/banner_background.png);
+    background-size: cover;
+}
+.news_title_left {
+    background-color: rgb(14, 64, 0);
+    color: white;
+    width: 25vw;
+    height: 7vw;
+    border-radius: 0 0 5vw 0;
+    background-image: url(./assets/banner_background.png);
+    background-size: cover;
+}
+.bottom {
+    width: 90%;
+    margin: auto;
+    margin-top: 6vw;
+    margin-bottom: 3vw;
+    font-family: 'HelveticaNow XBold';
+    font-weight: 'XBold';
+    color: white;
+    font-size: 1.1vw;
+}
+.regular_button_right {
+    font-family: 'SourceHans Medium';
+    color: white;
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    margin-top: 2vw;
+    height: 4vw;
+    border-radius: 2vw 0 0 0;
+    background-color: rgb(0, 125, 166);
+    border: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.regular_button_right:hover {
+    background-color: rgb(0, 191, 255);
+    border-radius: 2vw;
+}
+.regular_button_left {
+    font-family: 'SourceHans Medium';
+    color: white;
+    font-size: 1vw;
+    padding: 1vw 2vw;
+    margin-top: 2vw;
+    height: 4vw;
+    border-radius: 0 2vw 0 0;
+    background-color: rgb(0, 125, 166);
+    border: 0;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+.regular_button_left:hover {
+    background-color: rgb(0, 191, 255);
+    border-radius: 2vw;
+}
+.on_exhibition {
+    display: flex;
+    width: 100%;
+}
+.title {
+    color: black;
+    width: 90%;
+    text-align: right;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.menu_nav a, .banner a {
+    text-decoration: none;
+}
+.news_title {
+    font-size: 3vw;
+}
+.news_content {
+    font-size: 1.3vw;
+}
+.news_section {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 3vw;
+    font-family: 'SourceHans Medium';
+    color: white;
+}
+.article {
+    flex: 1;
+}
+.article img {
+    width: 100%;
+}
+.selector {
+    font-family: 'SourceHans Medium';
+    font-size: 1.2vw;
+    color: white;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 2;
+    top: 3vw;
+}
+.selector a {
+    color: white;
+    text-decoration: none;
+}
+.options {
+    background-color: rgba(0, 67, 109, 0.5);
+    padding: 0.8vw;
+    margin: 0 0.2vw 0 0.2vw;
+    border: 0;
+    border-radius: 2.3vw;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.options:hover {
+    background-color: rgb(0, 67, 109);
+}
+.options img {
+    width: 3vw;
+    border-radius: 1.5vw;
+}

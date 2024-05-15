@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antarctican Museum - 新闻</title>
+    <link rel="stylesheet" href="./AntarcticanMuseum.css">
+</head>
+<body>
+    <script src="./AntarcticanMuseum.js"></script>
+    <div class="shadow" id="shadow" onclick="menu_push_back(this), remove_shadow (this)"></div>
+    <nav>
+        <div class="navigator">
+            <ul>
+                <li class="logo_home"><a href="./index.html"><img src="./assets/logo.png" alt="" style="width: 6.5vw;"></a></li>
+                <ul class="subnavi">
+                    <li><button class="menu_button" style="display: none;">
+                        <img src="./assets/search_white_20dp_FILL0_wght400_GRAD-25_opsz20.png" alt="" class="search" style="width: 2vw;"></button>
+                    </li>
+                    <li><button class="menu_button" onclick="menu_push(this), draw_shadow(this)">
+                        <img src="./assets/menu_white_20dp_FILL0_wght400_GRAD-25_opsz20.png" alt="" class="menu" style="width: 2vw;"></button>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="emptybox" style="min-height: 8vw;"></div>
+    </section>
+    <div class="menu_nav" id="menu">
+        <div style="margin: 6% 10% 6% 6%">
+            <button class="menu_button" onclick="menu_push_back(this), remove_shadow (this)" style="float: right;">
+                <img src="./assets/close_white_20dp_FILL0_wght400_GRAD-25_opsz20.png" alt="" class="cancel" style="width: 2vw;">
+            </button>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumOnView.html"><div class="menu_banner">正在展出</div></a></div>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumCollection.html"><div class="menu_banner">所有馆藏</div></a></div>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumNews.html"><div class="menu_banner">新闻</div></a></div>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumAbout.html"><div class="menu_banner">关于</div></a></div>
+            <div style="position: absolute; right: 10%; bottom: 6%; left: 8%;">
+                <hr style="margin-bottom: 5vw;">
+                <img src="./assets/pear_logo.png" alt="" style="width: 3vw;"></li>
+                <span style="display: inline; font-family: 'HelveticaNow XBold'; color: white;">A Pear Organization</span>
+            </div>
+        </div>
+    </div>
+    <div id="news">
+        <div class="news_title" style="font-family: 'SourceHans Heavy'; color: white; width: 90%; text-align: left; margin: 0 auto;">新闻</div>
+        <section>
+            <div class="news_section">
+                <div class="article" style="margin-right: 3vw;">
+                    <img src="./assets/coming_soon.jpg" alt="">
+                    <p style="font-size: 1vw;">2024年5月14日</p>
+                    <p style="font-size: 1.5vw;">南极博物馆首批在线展览正在积极筹备中，尽情期待</p>
+                </div>
+                <div class="article">
+                    <img src="./assets/minecraft.png" alt="">
+                    <p style="font-size: 1vw;">2024年5月14日</p>
+                    <p style="font-size: 1.5vw;">南极博物馆Minecraft分馆正在锐意建造中，将放置与《我的世界》相关的艺术装置与游戏内置的画作</p>
+                </div>
+                <div class="article" style="margin-left: 3vw;">
+                    <img src="./assets/news_web_release.JPEG" alt="">
+                    <p style="font-size: 1vw;">2024年5月14日</p>
+                    <p style="font-size: 1.5vw;">南极博物馆网页今日上线</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section>
+        <div class="bottom">
+            <ul>
+                <ul>
+                    <li><img src="./assets/pear_logo.png" alt="" style="width: 3vw;"></li>
+                    <li style="display: inline;">A Pear Organization</li>
+                </ul>
+                <li style="display: inline; align-content: center;">© 2024 Antarctican Museum. All Rights Reserved.</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antarctican Museum - 关于</title>
+    <link rel="stylesheet" href="./AntarcticanMuseum.css">
+</head>
+<body>
+    <script src="./AntarcticanMuseum.js"></script>
+    <div class="shadow" id="shadow" onclick="menu_push_back(this), remove_shadow (this)"></div>
+    <nav>
+        <div class="navigator">
+            <ul>
+                <li class="logo_home"><a href="./index.html"><img src="./assets/logo.png" alt="" style="width: 6.5vw;"></a></li>
+                <ul class="subnavi">
+                    <li><button class="menu_button" style="display: none;">
+                        <img src="./assets/search_white_20dp_FILL0_wght400_GRAD-25_opsz20.png" alt="" class="search" style="width: 2vw;"></button>
+                    </li>
+                    <li><button class="menu_button" onclick="menu_push(this), draw_shadow(this)">
+                        <img src="./assets/menu_white_20dp_FILL0_wght400_GRAD-25_opsz20.png" alt="" class="menu" style="width: 2vw;"></button>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="emptybox" style="min-height: 8vw;"></div>
+    </section>
+    <div class="menu_nav" id="menu">
+        <div style="margin: 6% 10% 6% 6%">
+            <button class="menu_button" onclick="menu_push_back(this), remove_shadow (this)" style="float: right;">
+                <img src="./assets/close_white_20dp_FILL0_wght400_GRAD-25_opsz20.png" alt="" class="cancel" style="width: 2vw;">
+            </button>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumOnView.html"><div class="menu_banner">正在展出</div></a></div>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumCollection.html"><div class="menu_banner">所有馆藏</div></a></div>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumNews.html"><div class="menu_banner">新闻</div></a></div>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumAbout.html"><div class="menu_banner">关于</div></a></div>
+            <div style="position: absolute; right: 10%; bottom: 6%; left: 8%;">
+                <hr style="margin-bottom: 5vw;">
+                <img src="./assets/pear_logo.png" alt="" style="width: 3vw;"></li>
+                <span style="display: inline; font-family: 'HelveticaNow XBold'; color: white;">A Pear Organization</span>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <section>
+            <div class="banner" style="text-align: center;">
+                <img src="./assets/about.JPEG" alt="" style="max-width: 70%; margin: 0 auto;">
+                <div style="text-align: left; width: 40%; color: white; margin: 0 auto; margin-top: 6vw;">
+                    <div class="news_title" style="font-family: 'SourceHans Heavy';">
+                        关于南极博物馆
+                    </div>
+                    <div class="news_content" style="font-family: 'SourceHans Medium'; margin-top: 3vw;">
+                        南极博物馆是回忆的博物馆。这里有我和朋友们的表情包，还有家族群各位摄影师的作品！
+                    </div>
+                    <div class="news_content" style="font-family: 'SourceHans Medium'; margin-top: 1.3vw;">
+                        想到做这个网页有两个原因：第一是我很想学前端开发，想要学会做网页的技能。上学期没被录用的大创本来计划做一个网页的，
+                        虽然当时还不会做网页，但一直在看托管服务器的价格，结果最后没被录进去，也就搁置了。但是这次借博物馆的契机，又重新考虑了起来！边学边做，做成了南极博物馆。
+                        第二是我觉得公众号平台还是有太大限制了。只能做竖屏，也没有什么编辑的余地。相反地，网页很灵活，可以做出很多效果，
+                        在不同设备上也能得到同样的体验。
+                    </div>
+                    <div class="news_content" style="font-family: 'SourceHans Medium'; margin-top: 1.3vw;">
+                        剩下的就不知道说什么了，希望你能喜欢南极博物馆！你可以通过tandy9946@outlook.com这个邮箱联系我！单击左上角logo可以回到主页。
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section>
+        <div class="bottom">
+            <ul>
+                <ul>
+                    <li><img src="./assets/pear_logo.png" alt="" style="width: 3vw;"></li>
+                    <li style="display: inline;">A Pear Organization</li>
+                </ul>
+                <li style="display: inline; align-content: center;">© 2024 Antarctican Museum. All Rights Reserved.</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

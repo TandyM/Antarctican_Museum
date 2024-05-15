@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antarctican Museum - 欢迎来到南极博物馆</title>
+    <link rel="stylesheet" href="./AntarcticanMuseum.css">
+</head>
+<body>
+    <script src="./AntarcticanMuseum.js"></script>
+    <div class="shadow" id="shadow" onclick="menu_push_back(this), remove_shadow (this)"></div>
+    <nav>
+        <div class="navigator">
+            <ul>
+                <li class="logo_home"><a href="./index.html"><img src="./assets/logo.png" alt="" style="width: 6.5vw;"></a></li>
+                <ul class="subnavi">
+                    <li><button class="menu_button" style="display: none;">
+                        <img src="./assets/search_white_20dp_FILL0_wght400_GRAD-25_opsz20.png" alt="" class="search" style="width: 2vw;"></button>
+                    </li>
+                    <li><button class="menu_button" onclick="menu_push(this), draw_shadow(this)">
+                        <img src="./assets/menu_white_20dp_FILL0_wght400_GRAD-25_opsz20.png" alt="" class="menu" style="width: 2vw;"></button>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="emptybox" style="min-height: 8vw;"></div>
+    </section>
+    <div class="menu_nav" id="menu">
+        <div style="margin: 6% 10% 6% 6%">
+            <button class="menu_button" onclick="menu_push_back(this), remove_shadow (this)" style="float: right;">
+                <img src="./assets/close_white_20dp_FILL0_wght400_GRAD-25_opsz20.png" alt="" class="cancel" style="width: 2vw;">
+            </button>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumOnView.html"><div class="menu_banner">正在展出</div></a></div>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumCollection.html"><div class="menu_banner">所有馆藏</div></a></div>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumNews.html"><div class="menu_banner">新闻</div></a></div>
+            <div style="width: 70%;"><a href="./AntarcticanMuseumAbout.html"><div class="menu_banner">关于</div></a></div>
+            <div style="position: absolute; right: 10%; bottom: 6%; left: 8%;">
+                <hr style="margin-bottom: 5vw;">
+                <img src="./assets/pear_logo.png" alt="" style="width: 3vw;"></li>
+                <span style="display: inline; font-family: 'HelveticaNow XBold'; color: white;">A Pear Organization</span>
+            </div>
+        </div>
+    </div>
+    <div id="home">
+        <section>
+            <div class="banner" style="text-align: center;">
+                <a href="./AntarcticanMuseumAbout.html"><img src="./assets/welcome.png" alt="" style="max-width: 90%; margin: 0 auto;"></a>
+                <a href="./AntarcticanMuseumAbout.html"><div class="banner_heading">
+                    欢迎来到南极博物馆
+                </div></a>
+            </div>
+        </section>
+        <section>
+            <div class="on_exhibition" style="margin-top: 10vw; position: relative;">
+                <img src="./assets/coming_soon.jpg" alt="" style="max-width: 100%; margin: 0 auto;">
+                <div class="title">
+                    <span style="font-family: 'SourceHans Medium'; font-size: 1.5vw; letter-spacing: 1vw; color: white;">线上展览</span>
+                    <br>
+                    <span style="font-family: 'SourceHans Heavy'; font-size: 5vw; color: white;">布展中，尽情期待</span>
+                    <br>
+                    <a href="./AntarcticanMuseumOnView.html"><button class="regular_button_right" style="display: none;">游览</button></a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="News" style="margin-top: 10vw;">
+                <div style="text-align: left; display: flex; flex: 1; flex-direction: column;">
+                    <div class='news_title_left' style="font-family: 'SourceHans Heavy'; font-size: 3vw; flex: 1;  position: absolute; left: 0; top: 0;">
+                        新闻
+                    </div>
+                    <div style="font-family: 'SourceHans Medium'; font-size: 1.4vw; flex: 1;  position: absolute; left: 0; bottom: 0;">
+                        <span>南极博物馆网页今日上线</span>
+                        <br>
+                        <a href="./AntarcticanMuseumNews.html"><button class="regular_button_left">更多新闻</button></a>
+                    </div>
+                </div>
+                <div style="flex: 1;">
+                    <img src="./assets/news_web_release.JPEG" alt="" style="max-width: 100%; width: 100%;">
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="News" style="margin-top: 10vw;">
+                <div style="flex: 1;">
+                    <img src="./assets/Collection/Slumber_III.JPEG" alt="" style="max-width: 100%; width: 100%;"></th>
+                </div>
+                <div style="text-align: right; display: flex; flex: 1; flex-direction: column;">
+                    <div class='news_title_right' style="font-family: 'SourceHans Heavy'; font-size: 3vw; flex: 1;  position: absolute; right: 0; top: 0;">
+                        最新馆藏
+                    </div>
+                    <div style="font-family: 'SourceHans Medium'; font-size: 1.4vw; flex: 1;  position: absolute; right: 0; bottom: 0;">
+                        <span>《睡觉III》</span>
+                        <br>
+                        <span>2024年</span>
+                        <br>
+                        <a href="./AntarcticanMuseumCollection.html"><button class="regular_button_right">其他馆藏</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="banner" style="text-align: center; margin-top: 10vw;">
+                <img src="./assets/minecraft.png" alt="" style="max-width: 90%; margin: 0 auto;">
+                <div class="banner_heading">
+                    <span style="font-family: 'HelveticaNow XBold';font-weight: 'XBold';">Minecraft</span>分馆锐意建造中
+                </div>
+            </div>
+        </section>
+    </div>
+    <section>
+        <div class="bottom">
+            <ul>
+                <ul>
+                    <li><img src="./assets/pear_logo.png" alt="" style="width: 3vw;"></li>
+                    <li style="display: inline;">A Pear Organization</li>
+                </ul>
+                <li style="display: inline; align-content: center;">© 2024 Antarctican Museum. All Rights Reserved.</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
